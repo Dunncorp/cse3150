@@ -1,4 +1,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+/*
+  https://hackingcpp.com/cpp/tools/testing_frameworks.html
+ */
 
 #include "doctest.h"
 #include "ECNumbers.h"
