@@ -8,12 +8,15 @@ using namespace std;
 int main() {
 
   int a = 5, b = 10;
+  int aa = a, bb = b;  
+  const int a_save = a, b_save = b;
+
   cout << "a is "
        << a
        << " and b is "
        << b
        << endl;
-  int aa = a, bb = b;
+
   int m = MAX(a++,b++);
   int mm = max(aa++,bb++);
   
@@ -27,12 +30,11 @@ int main() {
        << endl;
 
   cout << "max of aa = "
-       << aa
+       << a_save
        << " and bb = "
-       << bb
+       << b_save
        << " is "
        << mm
-       << " ?!?!"
        << endl;
   
   return 0;
