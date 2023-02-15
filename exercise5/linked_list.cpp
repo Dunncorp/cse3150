@@ -26,9 +26,14 @@ struct node * build_linked_list(const int elements) {
   Returns the last node in the list
  */
 struct node * pointer_jump_linked_list(struct node * linked_list, const int elements) {
-  
+  struct node * first_node = linked_list;
   for( int i = 0; i < elements; i++) {
     linked_list = linked_list->next;
+  }
+
+  struct node * current_node = first_node;
+  for(int i = 0; i < elements; i++) {
+    current_node->jumper = linked_list;
   }
 
   return linked_list;
