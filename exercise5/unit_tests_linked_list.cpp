@@ -32,6 +32,38 @@ TEST_CASE("Testing pointer_jumped_linked_list") {
   end = pointer_jump_linked_list(linked_list_1,LIST_LENGTH_1);
   CHECK( end->next->next == end ); // the last node points to itself
 
+  struct node * start = linked_list_2;
+  end = pointer_jump_linked_list(linked_list_2, LIST_LENGTH_2);
+  CHECK(start->jumper == end);
+  CHECK(start->next->jumper == end);
+  CHECK(end->next == end);
+  CHECK(end->jumper == end);
+
+  start = linked_list_3;
+  end = pointer_jump_linked_list(linked_list_3, LIST_LENGTH_3);
+  CHECK(start->jumper == end);
+  CHECK(start->next->jumper == end);
+  start = start->next;
+  CHECK(start->jumper == end);
+  CHECK(end->next == end);
+  CHECK(end->jumper == end);
+
+  start = linked_list_10;
+  end = pointer_jump_linked_list(linked_list_10, LIST_LENGTH_10);
+  CHECK(start->jumper == end);
+  CHECK(start->next->jumper == end);
+  start = start->next;
+  CHECK(start->jumper == end);
+  start = start->next;
+  CHECK(start->jumper == end);
+  start = start->next;
+  CHECK(start->jumper == end);
+  start = start->next;
+  CHECK(start->jumper == end);
+  start = start->next;
+  CHECK(start->jumper == end);
+  CHECK(end->next == end);
+  CHECK(end->jumper == end);
 }
 
 TEST_CASE("Testing build linked list") {

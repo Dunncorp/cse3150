@@ -36,6 +36,9 @@ struct node * pointer_jump_linked_list(struct node * linked_list, const int elem
     current_node->jumper = linked_list;
   }
 
+  // make sure the final node points to itself
+  linked_list->next = linked_list;
+
   return linked_list;
 }
 
