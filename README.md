@@ -21,3 +21,10 @@ stl_stack.cpp and unit_tests can be compiled with g++
 after unit_tests is compiled you can run them and see the tests output of the code
 
 **********
+Week 4 Lab Implelemt pointer jumping code
+git clone https://github.com/Dunncorp/cse3150.git
+files for this lab will be found in exercise5 folder
+compile
+g++ unit_tests_linked_list.cpp linked_list.cpp linked_list.h
+run
+.\unit_tests_linked_list
