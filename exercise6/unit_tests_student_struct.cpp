@@ -4,9 +4,9 @@
 #include "student_functions.h"
 
 
-student student100 = {};
-student student50 = {};
-student student0 = {};
+struct student student100 = {};
+struct student student50 = {};
+struct student student0 = {};
 
 
 TEST_CASE("midterm scores") {
