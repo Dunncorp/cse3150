@@ -28,3 +28,12 @@ compile
 g++ unit_tests_linked_list.cpp linked_list.cpp linked_list.h
 run
 .\unit_tests_linked_list
+
+**********
+Week 5 Class assignment refactor student code
+git clone https://github.com/Dunncorp/cse3150.git
+navigate to exercise 6
+compile
+g++ unit_tests_student_functions.cpp student_main.cpp student_functions.cpp student_functions.h
+run
+.\a.out
